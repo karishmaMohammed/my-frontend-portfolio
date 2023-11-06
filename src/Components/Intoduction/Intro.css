@@ -1,0 +1,118 @@
+.intro-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+  
+}
+
+.intro-hello {
+    margin-top: 50px;
+    color: orange;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.intro-matter {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.download-resume {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.download-resume button {
+    border: none;
+    background: #fc8eac;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.download-resume img{
+    width: 40px;
+    height: 40px;
+}
+
+.intro-profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.intro-flipping-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.intro-flip-card {
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.intro-flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateY(0deg);
+}
+
+.intro-flip-card:hover .intro-flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.intro-flip-card-front,
+.intro-flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    backface-visibility: hidden;
+    border-radius: 50%;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.intro-flip-card-back {
+    font-size: 15px;
+}
+
+.intro-flip-card-front {
+    background-color: #3498db;
+}
+
+.intro-flip-card-back {
+    background-color: #e74c3c;
+    transform: rotateY(180deg);
+}
