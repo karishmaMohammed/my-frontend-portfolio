@@ -7,7 +7,7 @@
 
 import React from 'react'
 
-function Education() {
+function EducationForm() {
   return (
     <div>
         <div>
@@ -48,4 +48,4 @@ function Education() {
   )
 }
 
-export default Education
+export default EducationForm

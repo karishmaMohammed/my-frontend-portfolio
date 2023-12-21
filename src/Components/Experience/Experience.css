@@ -1,0 +1,182 @@
+.exp-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 35px;
+    /* height: 70vh; */
+    border-bottom: 1px solid #b557a8;
+    overflow-y: scroll;
+    height: 70vh;
+    box-sizing: border-box;
+    background-image: url('https://marathon-web-assets.s3.ap-south-1.amazonaws.com/org-background.svg');
+}
+
+.experience-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+   /* margin-top: 50px; */
+}
+
+.ver-div {
+
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.ver-line {
+    border: 2px solid grey;
+    height: 30vh;
+    /* position: relative; */
+}
+
+.even-items,
+.odd-items {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    position: relative;
+
+    /* justify-content: flex-end; */
+}
+
+.experience-item {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+    align-items: start;
+    gap: 30px;
+}
+
+.experience-item-even {
+    display: flex;
+   
+    justify-content: flex-start;
+    align-items: start;
+    gap: 30px;
+}
+.details-outline,.even-details-outline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    box-sizing: border-box;
+    /* margin-left: 30px; */
+    width:475px;
+    height: 150px;
+    
+   
+}
+.even-details-outline{
+    margin-right: 30px;
+}
+.even-details-tri,
+.details-tri {
+    display: flex;
+    align-items: flex-start;
+    /* margin-right: 30px; */
+    background-color: white;
+}
+
+.details-outline {
+    margin-left: 30px;
+}
+
+.details-container,
+.odd-details-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 450px;
+    /* height: 125px; */
+    border-radius: 15px 0px 15px 15px;
+    text-align: left;
+    border: 1px solid black;
+    transition: margin 0.6s ease;
+}
+
+.details-container:hover,
+.odd-details-container:hover {
+    cursor: pointer;
+    margin-bottom: 25px;
+    /* width: 470px; 
+    height: 145px; */
+    /* Adjust the desired height on hover */
+}
+
+.odd-details-container {
+    border-radius: 0px 15px 15px 15px;
+}
+
+.photo-container-right,
+.photo-container-left {
+    background-color: white;
+    position: absolute;
+    padding: 5px;
+    border: 1px solid rgb(151, 149, 149);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.photo-container-right {
+    right: -54px;
+
+}
+
+.photo-container-left {
+    left: -54px;
+}
+
+.photo-container-right img,
+.photo-container-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid rgb(0, 0, 255);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    background-color: white;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-right: 10px solid rgb(0, 0, 255);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    background-color: white;
+}
+.experience-name{
+    /* display: flex; */
+    text-align: center;
+    color:#b557a8;
+    font-weight: 800;
+    font-size: 25px;
+}
+.experience-dates{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.company-location{
+    text-align: right;
+    padding-right: 25px;
+}
+.experience-description{
+    word-wrap: break-word;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './PortifolioFirst.css'
-import userLogo from '../../assets/user-profile.png'
+import { ASSETS_URL } from '../../Constant'
+
 
 
 function PortifolioFirst() {
@@ -8,7 +9,7 @@ function PortifolioFirst() {
     <div className='my-portifolio-page'>
       <div className='portifolio-topNav'>
         <div className='portifolio-name'>
-          <img src={userLogo} alt='logo' />
+          <img src={`${ASSETS_URL}user-profile.png`} alt='logo' />
           <span>Srinivas Muchu</span>
         </div>
         <div className='portifolio-links'>

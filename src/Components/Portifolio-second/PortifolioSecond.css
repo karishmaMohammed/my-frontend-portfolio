@@ -1,24 +1,68 @@
 .main-div{
   /* background: rgb(0, 0, 0); */
-  background-image: url('../../assets/background-image-galaxy.gif');
+  background-image: url('https://portfolio-ks.s3.ap-south-1.amazonaws.com/background-image-galaxy.gif');
+  /* background-color: black; */
   min-height: 100vh;
   width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 .profile-details{
     display: flex;
     align-items: center;
-    gap: 10px;
-    justify-content: end;
-    padding: 10px ;
-    padding-right: 50px;
+    justify-content: center;
+    /* align-items: center; */
+    
+    /* justify-content: end; */
+    /* padding: 10px ;
+    padding-right: 50px; */
     font-size: 40px;
     font-weight: 600;
+    width: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    
+    /* height: auto; */
+    
 }
-.profile-details img{
+.profile-details1{
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    border-radius: 50px 5px;
+    box-sizing: border-box;
+    padding: 15px;
+    color: white;
+    width: 100%;
+    height: 56.5vh;
+}
+.photo-details{
+  display: flex;
+  /* flex-direction: column; */
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.typing-home{
+  font-size: 25px;
+}
+.only-details{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
+}
+.photo-details img{
     border-radius: 50%;
     border: 1px solid black;
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
+    filter: invert(1);
 }
 .firstname{
   color: #a44c6f;
@@ -33,10 +77,13 @@
  justify-content: center;
  align-items: center;
  padding-top: 50px;
+ width: 75%;
+ height: 92vh;
+ overflow-y: hidden;
 }
 .flip-card {
-    width: 30vw;
-    height: 200px;
+    width: 22vw;
+    height: 150px;
     perspective: 1000px;
     cursor: pointer;
     border-radius: 10px;
@@ -103,14 +150,42 @@
       border-image: linear-gradient(45deg, #ff0040, #ffffff) 1;
     }
   } */
-
-  @media screen and (max-width: 800px){
-    .flipping-cards{
+  @media screen and (max-width: 1020px){
+.main-div{
+  display: flex;
+  flex-direction: column;
+}
+.profile-details{
+  width: 100%;
+}
+.profile-details1{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.flipping-cards{
+  width: 100%;
+}
+  }
+  @media screen and (max-width: 550px){
+    .photo-details{
       display: flex;
       flex-direction: column;
+
+    }
+  }
+  @media screen and (max-width: 800px){
+    .flipping-cards{
+      
+      display: flex;
+      flex-wrap: wrap;
+      /* flex-direction: column; */
       gap: 10px;
       align-items: center;
       justify-content: center;
+      
     }
     .flip-card-front,
     .flip-card-back{
@@ -123,7 +198,7 @@
     }
     .flip-card {
       width: 50vw;
-      height: 200px;
+      height: 150px;
       perspective: 1000px;
       cursor: pointer;
       border-radius: 10px;
