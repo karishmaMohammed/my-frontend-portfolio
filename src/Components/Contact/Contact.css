@@ -1,5 +1,8 @@
 .contact-page {
+  /* background-color: rgb(64, 60, 60);
+  color: white; */
   padding: 20px;
+  box-sizing: border-box;
 }
 .flex-links {
   display: flex;
@@ -26,7 +29,8 @@
   cursor: pointer;
 }
 .contact-me {
-  font-size: 70px;
+  font-size: Clamp(35px, 4.3vw, 70px);
+  /* font-size: 70px; */
   font-weight: 800;
   justify-content: center;
   align-items: center;
@@ -120,6 +124,7 @@
   width: 300px;
   height: 300px;
   margin-top: 45px;
+  border-radius: 50%;
 }
 .contact-profile {
   display: flex;
@@ -140,6 +145,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 15px;
 }
 .form-page {
   width: 64%;
@@ -220,4 +226,39 @@
   font-size: 20px;
   text-align: center;
   font-weight: 800;
+}
+.individual-input-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: #25D366;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  .get-in-touch {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-profile {
+    width: 100%;
+  }
+  .form-page {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .individual-input {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 350px) {
+  .profile-logo-contact {
+    width: 250px;
+    height: 250px;
+  }
 }

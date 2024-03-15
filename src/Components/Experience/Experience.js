@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import './Experience.css';
-import { ASSETS_URL, BASE_URL } from '../../Constant'
-import BottomRoute from '../BottomRoute';
+import React, { useState, useEffect } from 'react';
+import { BASE_URL } from '../../Constant';
 import axios from 'axios';
+import './Experience.css';
+import { ASSETS_URL } from '../../Constant'
+import BottomRoute from '../BottomRoute';
 
 function Experience() {
 
@@ -13,16 +14,17 @@ function Experience() {
     getExperienceDetails()
   }, [])
 
-  const getExperienceDetails = async() => {
+  const getExperienceDetails = async () => {
     try {
-      const allExperianceDetails = await axios.get( BASE_URL + "/experiance/get-experiance");
+      const allExperianceDetails = await axios.get(BASE_URL + "/experiance/get-experiance");
       setExperiance(allExperianceDetails.data.data.all_experiance);
-     
+
     } catch (error) {
       console.log(error)
     }
   }
   console.log(experiance);
+
   const cardData = [
     {
       front: 'intro',
@@ -71,35 +73,87 @@ function Experience() {
     },
 
   ];
-  // const exprArray = [
-   
-  //   {
-  //     companyName: "bLDBDV",
-  //     companyDescription: "ifrhbvy8o",
-  //     startDate: new Date("2023-12-06T00:00:00.000Z").toISOString().split('T')[0],
-  //     endDate: new Date("2023-12-26T00:00:00.000Z").toISOString().split('T')[0],
-  //     present: false,
-  //     role: "fhbvhiesi",
-  //     location: "neflgh",
-  //     roleDescription: "fjebo8ye",
-  //     companyPhoto: 'https://marathon-web-assets.s3.ap-south-1.amazonaws.com/marathon-m-logo.jpg',
-  //     name: 'Marathon',
-  //     description: 'sdhfsdjgfdhgfhd',
-  //   },
-  //   {
-  //     companyName: "bLDBDV",
-  //     companyDescription: "ifrhbvy8o",
-  //     startDate: new Date("2023-12-06T00:00:00.000Z").toISOString().split('T')[0],
-  //     endDate: new Date("2023-12-26T00:00:00.000Z").toISOString().split('T')[0],
-  //     present: false,
-  //     role: "fhbvhiesi",
-  //     location: "neflgh",
-  //     roleDescription: "fjebo8ye",
-  //     companyPhoto: 'https://marathon-web-assets.s3.ap-south-1.amazonaws.com/marathon-m-logo.jpg',
-  //     name: 'Marathon',
-  //     description: 'sdhfsdjgfdhgfhd',
-  //   },
-  // ];
+  const exprArray = [
+
+    {
+      companyName: "bLDBDV",
+      companyDescription: "ifrhbvy8o",
+      startDate: new Date("2023-12-06T00:00:00.000Z").toISOString().split('T')[0],
+      endDate: new Date("2023-12-26T00:00:00.000Z").toISOString().split('T')[0],
+      present: false,
+      role: "fhbvhiesi",
+      location: "neflgh",
+      roleDescription: "fjebo8ye",
+      companyPhoto: 'https://marathon-web-assets.s3.ap-south-1.amazonaws.com/marathon-m-logo.jpg',
+      name: 'Marathon',
+      description: 'sdhfsdjgfdhgfhd',
+    },
+    {
+      companyName: "bLDBDV",
+      companyDescription: "ifrhbvy8o",
+      startDate: new Date("2023-12-06T00:00:00.000Z").toISOString().split('T')[0],
+      endDate: new Date("2023-12-26T00:00:00.000Z").toISOString().split('T')[0],
+      present: false,
+      role: "fhbvhiesi",
+      location: "neflgh",
+      roleDescription: "fjebo8ye",
+      companyPhoto: 'https://marathon-web-assets.s3.ap-south-1.amazonaws.com/marathon-m-logo.jpg',
+      name: 'Marathon',
+      description: 'sdhfsdjgfdhgfhd',
+    },
+    {
+      companyName: "bLDBDV",
+      companyDescription: "ifrhbvy8o",
+      startDate: new Date("2023-12-06T00:00:00.000Z").toISOString().split('T')[0],
+      endDate: new Date("2023-12-26T00:00:00.000Z").toISOString().split('T')[0],
+      present: false,
+      role: "fhbvhiesi",
+      location: "neflgh",
+      roleDescription: "fjebo8ye",
+      companyPhoto: 'https://marathon-web-assets.s3.ap-south-1.amazonaws.com/marathon-m-logo.jpg',
+      name: 'Marathon',
+      description: 'sdhfsdjgfdhgfhd',
+    },
+    {
+      companyName: "bLDBDV",
+      companyDescription: "ifrhbvy8o",
+      startDate: new Date("2023-12-06T00:00:00.000Z").toISOString().split('T')[0],
+      endDate: new Date("2023-12-26T00:00:00.000Z").toISOString().split('T')[0],
+      present: false,
+      role: "fhbvhiesi",
+      location: "neflgh",
+      roleDescription: "fjebo8ye",
+      companyPhoto: 'https://marathon-web-assets.s3.ap-south-1.amazonaws.com/marathon-m-logo.jpg',
+      name: 'Marathon',
+      description: 'sdhfsdjgfdhgfhd',
+    },
+    {
+      companyName: "bLDBDV",
+      companyDescription: "ifrhbvy8o",
+      startDate: new Date("2023-12-06T00:00:00.000Z").toISOString().split('T')[0],
+      endDate: new Date("2023-12-26T00:00:00.000Z").toISOString().split('T')[0],
+      present: false,
+      role: "fhbvhiesi",
+      location: "neflgh",
+      roleDescription: "fjebo8ye",
+      companyPhoto: 'https://marathon-web-assets.s3.ap-south-1.amazonaws.com/marathon-m-logo.jpg',
+      name: 'Marathon',
+      description: 'sdhfsdjgfdhgfhd',
+    },
+    {
+      companyName: "bLDBDV",
+      companyDescription: "ifrhbvy8o",
+      startDate: new Date("2023-12-06T00:00:00.000Z").toISOString().split('T')[0],
+      endDate: new Date("2023-12-26T00:00:00.000Z").toISOString().split('T')[0],
+      present: false,
+      role: "fhbvhiesi",
+      location: "neflgh",
+      roleDescription: "fjebo8ye",
+      companyPhoto: 'https://marathon-web-assets.s3.ap-south-1.amazonaws.com/marathon-m-logo.jpg',
+      name: 'Marathon',
+      description: 'sdhfsdjgfdhgfhd',
+    },
+  ];
 
 
   return (
@@ -116,16 +170,43 @@ function Experience() {
                 <div className='even-details-outline'>
                   <div className='even-details-tri'>
                     <div className='details-container'>
-                      <span className='experience-name'>{item.companyName}</span>
-                      <div className='experience-dates'>
-                      <span >start:{item.startDate}</span>
-                      <span >{item.present === true ? 'present' : `end:${item.endDate}`}</span>
+                      <div className='experience-name'>
+                        <span >{item.companyName}</span>
                       </div>
-                      <span>{item.role}</span>
-                      <span>role:{item.role}</span>
-                      <span className='experience-description'>role desc:{item.roleDescription}</span>
-                      <span className='experience-description'>company desc:{item.companyDescription}</span>
-                      <address className='company-location'>location:{item.location}</address>
+
+                      <div className='experience-dates'>
+                        <div>
+                          <span className='exp-role-text'>Start :</span>
+                          <span>{item.startDate}</span>
+                        </div>
+                        <div>
+                          <span className='exp-role-text'>End :</span>
+                          {item.present === true ? <span>present</span> : <span>{item.endDate}</span>}
+                        </div>
+                        {/* <span >start:{item.startDate}</span>
+                        <span >{item.present === true ? 'present' : `end:${item.endDate}`}</span> */}
+                      </div>
+                      <div className='exp-role'>
+                        <span className='exp-role-text'>Role :</span>
+                        <span>{item.role}</span>
+                      </div>
+                      <div className='exp-role'>
+                        <span className='exp-role-text'>Role desc:</span>
+                        <span>{item.roleDescription}</span>
+                      </div>
+                      <div className='exp-role'>
+                        <span className='exp-role-text'>company desc:</span>
+                        <span>{item.companyDescription}</span>
+                      </div>
+                      <div className='exp-addr'>
+                        <span className='exp-role-text'>location:</span>
+                        <address>{item.location}</address>
+                      </div>
+
+                      {/* <span>role:{item.role}</span> */}
+                      {/* <span className='experience-description'>role desc:{item.roleDescription}</span> */}
+                      {/* <span className='experience-description'>company desc:{item.companyDescription}</span> */}
+                      {/* <address className='company-location'>location:{item.location}</address> */}
                     </div>
                     <div className='triangle'></div>
                   </div>
@@ -157,15 +238,76 @@ function Experience() {
                     <div className='odd-details-container'>
                       <span className='experience-name'>{item.companyName}</span>
                       <div className='experience-dates'>
-                      <span >start:{item.startDate}</span>
-                      <span >{item.present === true ? 'present' : `end:${item.endDate}`}</span>
+                        <div>
+                          <span className='exp-role-text'>Start :</span>
+                          <span>{item.startDate}</span>
+                        </div>
+                        <div>
+                          <span className='exp-role-text'>End :</span>
+                          {item.present === true ? <span>present</span> : <span>{item.endDate}</span>}
+                        </div>
+                        {/* <span >start:{item.startDate}</span>
+                        <span >{item.present === true ? 'present' : `end:${item.endDate}`}</span> */}
                       </div>
-                      <span>role:{item.role}</span>
-                      <span className='experience-description'>role desc:{item.roleDescription}</span>
-                      <span className='experience-description'>company desc:{item.companyDescription}</span>
-                      <address className='company-location'>location:{item.location}</address>
+                      <div className='exp-role'>
+                        <span className='exp-role-text'>Role :</span>
+                        <span>{item.role}</span>
+                      </div>
+                      <div className='exp-role'>
+                        <span className='exp-role-text'>Role desc:</span>
+                        <span>{item.roleDescription}</span>
+                      </div>
+                      <div className='exp-role'>
+                        <span className='exp-role-text'>company desc:</span>
+                        <span>{item.companyDescription}</span>
+                      </div>
+                      <div className='exp-addr'>
+                        <span className='exp-role-text'>location:</span>
+                        <address>{item.location}</address>
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className='experience-mobile'>
+          <div className='exp-item'>
+            {experiance.map((item, index) => (
+              <div
+                key={index}
+                className='experience-item-mob'
+              // style={{ visibility: index % 2 !== 0 ? 'hidden' : 'visible' }}
+              >
+                <div className='exp-box'>
+                  <img className='comp-logo-mob' src={item.companyLogo} alt={item.companyName} />
+                  <div className='exp-hori-vert'></div>
+                  <div>
+                    <span className='exp-mob-title'>{item.companyName}</span>
+                    <div className='experience-mob-dates'>
+                      <span >start:{item.startDate}</span>
+                      <span >{item.present === true ? 'present' : `end:${item.endDate}`}</span>
+                    </div>
+                    <div className='exp-role'>
+                      <span className='exp-role-text'>Role :</span>
+                      <span>{item.role}</span>
+                    </div>
+                    <div className='exp-role'>
+                      <span className='exp-role-text'>Role desc:</span>
+                      <span>{item.roleDescription}</span>
+                    </div>
+                    <div className='exp-role'>
+                      <span className='exp-role-text'>company desc:</span>
+                      <span>{item.companyDescription}</span>
+                    </div>
+                    <div className='exp-addr'>
+                      <span className='exp-role-text'>location:</span>
+                      <address>{item.location}</address>
+                    </div>
+
+                  </div>
+
                 </div>
               </div>
             ))}

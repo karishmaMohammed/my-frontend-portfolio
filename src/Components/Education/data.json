@@ -3,7 +3,7 @@
     "attributes": {
       "department": "karishmamohammed43@gmail.com"
     },
-    "image": "https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Ariba-29-768x768.png",
+    "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/karishma.jpg",
   
     "children": [
       {
@@ -12,21 +12,21 @@
         "attributes": {
           "department": "st.Mary's High School"
         },
-        "image": "https://th.bing.com/th/id/OIP.lTDAAWGk1hODBfVHR4gbaAHaG0?w=181&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+        "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/karishma-ST-Mary's-School.jpeg",
         "children": [
           {
             "name": "Location",
             "attributes": {
               "department": "Gooty R.S"
             },
-            "image": "https://png.pngtree.com/png-clipart/20230531/ourmid/pngtree-pin-map-location-icon-logo-symbol-design-transparent-background-free-png-image_7116032.png"
+            "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/location-logo.png"
           },
           {
             "name": "Passed-out : 2015",
             "attributes": {
               "department": "CGPA : 9.2"
             },
-            "image": "https://png.pngtree.com/png-vector/20190129/ourmid/pngtree-graduation-icon-png-image_350574.jpg"
+            "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/graduate-logo.jpg"
           }
         ]
       },
@@ -36,21 +36,21 @@
         "attributes": {
           "department": "Narayana Junior College"
         },
-        "image": "https://th.bing.com/th?id=OIP.Rc4eydBVWO2e9Qw56fzhJAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2",
+        "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/Narayana-College.jpeg",
         "children": [
           {
             "name": "Location",
             "attributes": {
               "department": "Kurnool - A.P"
             },
-            "image": "https://png.pngtree.com/png-clipart/20230531/ourmid/pngtree-pin-map-location-icon-logo-symbol-design-transparent-background-free-png-image_7116032.png"
+            "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/location-logo.png"
           },
           {
             "name": "Passed-out : 2017",
             "attributes": {
               "department": "Percentage : 97%"
             },
-            "image": "https://png.pngtree.com/png-vector/20190129/ourmid/pngtree-graduation-icon-png-image_350574.jpg"
+            "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/graduate-logo.jpg"
           }
         ]
       },
@@ -60,14 +60,14 @@
         "attributes": {
           "department": "Gates Institute of Technology"
         },
-        "image": "https://th.bing.com/th/id/OIP.hIYkL3PQfBAGJIhuF9efpAHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+        "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/Gates-College.jpeg",
         "children": [
           {
             "name": "Location",
             "attributes": {
               "department": "Gooty - A.P"
             },
-            "image": "https://png.pngtree.com/png-clipart/20230531/ourmid/pngtree-pin-map-location-icon-logo-symbol-design-transparent-background-free-png-image_7116032.png"
+            "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/location-logo.png"
             
           },
           {
@@ -75,7 +75,7 @@
             "attributes": {
               "department": "Percentage : 82%"
             },
-            "image": "https://png.pngtree.com/png-vector/20190129/ourmid/pngtree-graduation-icon-png-image_350574.jpg"
+            "image": "https://portfolio-ks.s3.ap-south-1.amazonaws.com/graduate-logo.jpg"
             
           }
         ]

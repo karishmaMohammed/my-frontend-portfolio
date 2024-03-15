@@ -109,6 +109,18 @@ function PortifolioSecond({profileDetails}) {
   return (
     <div className='main-div'>
       <div className='profile-details'>
+      <div className='stars'>
+                <div className='star-1'>
+                  <img src={`${ASSETS_URL}star-logo.svg`}/>
+                </div>
+                <div className='star-2'>
+                <img src={`${ASSETS_URL}star-logo.svg`} className='star-2-img1'/>
+                <img src={`${ASSETS_URL}star-logo.svg`} className='star-2-img2'/>
+                </div>
+                <div className='star-3'>
+                <img src={`${ASSETS_URL}star-logo.svg`}/>
+                </div>
+              </div>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -117,18 +129,18 @@ function PortifolioSecond({profileDetails}) {
 
           <div className='photo-details'>
             <div className='only-details'>
-              <span>Hi,  I'M</span>
+              <span>Hi,  I'm</span>
               <span className='firstname'>{profileDetails.fullName} </span>
               <span className='typing-home'>
-                 {/* <Typed
-                strings={profileDetails.designations}
+                 <Typed
+                strings={arrayOfList}
                 typeSpeed={140}
                 backSpeed={50}
                 loop
-              /> */}
+              />
               </span>
             </div>
-            <img src={`${ASSETS_URL}user-profile.png`} alt="logo" />
+            <img src={profileDetails.photo} alt="logo" />
           </div>
           <div className='portifolio-desc'>
             <span>This is my Portifolio</span>

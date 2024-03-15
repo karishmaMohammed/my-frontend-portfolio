@@ -40,6 +40,7 @@
   .vertical-align::-webkit-scrollbar-thumb {
     background-color: #9f9e9e; /* Set the color of the thumb */
     border-radius: 15px; /* Set the border radius of the thumb */
+    overflow-y: hidden;
   }
   
   .vertical-align::-webkit-scrollbar-track {
@@ -103,6 +104,10 @@ border: 1px solid black;
   width: 100%;
   height: 80%;
   border-radius: 15px;
+  overflow-y: scroll;
+}
+.dropping-div::-webkit-scrollbar {
+  display: none;
 }
 .dropped-head{
   border: 1px solid black;
@@ -110,6 +115,13 @@ border: 1px solid black;
   height: 70px;
   box-sizing: border-box;
   border-radius: 15px;
+  font-size:  Clamp(5px, 1vw, 15px);
+  text-align: center;
+}
+.items-dragging:hover{
+  border: 1px solid #f14adb;
+  /* box-shadow: blue 0px 5px 15px; */
+  box-shadow: rgb(234, 174, 214) 0px 7px 29px 0px;
 }
 .dropped-head h2 {
     color: #f14adb;
@@ -160,3 +172,19 @@ border: 1px solid black;
     width: 99.9%;
     
 }
+@media screen and (max-width: 500px){
+  .dropping-items,.drag-img{
+    display: none;
+  }
+  
+  .skills-items{
+    width: 100%;
+    
+  }
+  .vertical-align{
+    width: 100%;
+    /* display: flex;
+      flex-direction: column;
+      justify-content: center; */
+  }
+  }
