@@ -324,3 +324,15 @@ color: #f78de9;
     height: 200px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .photo-details {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .firstname{
+    -webkit-text-stroke: 0px rgb(255, 255, 255);
+    text-shadow: 0px 0px;
+  }
+}
