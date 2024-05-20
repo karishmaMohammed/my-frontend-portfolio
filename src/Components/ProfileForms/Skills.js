@@ -16,6 +16,7 @@ function Skills() {
     { value: "frontend", label: "frontend" },
     { value: "backend", label: "backend" },
     { value: "hoisting", label: "hoisting" },
+    { value: "learning skills", label: "learning skills" },
   ];
 
   const handleChange = (selectedSkillType) => {

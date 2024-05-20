@@ -7,8 +7,7 @@ import {toast} from 'react-toastify';
 
 
 function GetInTouch({ profileDetails}) {
-  // console.log(profileDetails.designations)
-  console.log(profileDetails);
+  
   const [clientName,setClientName] = useState('')
   const [clientEmail,setClientEmail]=useState('')
   const [clientPhoneNumber,setClientPhoneNumber]=useState('')
@@ -38,16 +37,16 @@ function GetInTouch({ profileDetails}) {
     return;
   }
 
-  // Email validation
+ 
   if (!emailPattern.test(clientEmail) ||!clientEmail ) {
-    // If email is not valid, show an error toast
+    
     toast.error("Please enter a valid email address", toastStyle);
     return;
   }
 
-  // Phone number validation
+  
   if (!phoneNumberPattern.test(clientPhoneNumber)) {
-    // If phone number is not valid, show an error toast
+    
     toast.error("Please enter a valid 10-digit phone number", toastStyle);
     return;
   }
@@ -128,7 +127,7 @@ function GetInTouch({ profileDetails}) {
         <div className="form">
           <div className="form-box">
             <div className="individual-input">
-              <label>Name</label>
+              <label>Name:</label>
               <input type="text" placeholder="Enter your Name" value={clientName} onChange={(e)=>setClientName(e.target.value)}/>
             </div>
             <div className="individual-input">

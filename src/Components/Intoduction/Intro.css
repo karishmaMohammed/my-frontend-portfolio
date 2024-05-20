@@ -12,11 +12,10 @@
 
 .intro-hello {
     /* margin-top: 20px; */
-    color: orange;
-    font-weight: 800;
+    color: #f78de9;
+    font-weight: 600;
     /* font-size: 50px; */
-    font-size: Clamp(25px, 3.4vw, 50px)
-    ;
+    font-size: Clamp(25px, 3.4vw, 50px);
 }
 
 .intro-matter {

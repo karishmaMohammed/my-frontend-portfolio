@@ -109,7 +109,7 @@ function PortifolioSecond({profileDetails}) {
   return (
     <div className='main-div'>
       <div className='profile-details'>
-      <div className='stars'>
+      {/* <div className='stars'>
                 <div className='star-1'>
                   <img src={`${ASSETS_URL}star-logo.svg`}/>
                 </div>
@@ -120,7 +120,7 @@ function PortifolioSecond({profileDetails}) {
                 <div className='star-3'>
                 <img src={`${ASSETS_URL}star-logo.svg`}/>
                 </div>
-              </div>
+              </div> */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -143,7 +143,7 @@ function PortifolioSecond({profileDetails}) {
             <img src={profileDetails.photo} alt="logo" />
           </div>
           <div className='portifolio-desc'>
-            <span>This is my Portifolio</span>
+            <span>Explore my professional highlights in this comprehensive portfolio.</span>
           </div>
 
         </motion.div>

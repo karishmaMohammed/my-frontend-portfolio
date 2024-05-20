@@ -186,6 +186,31 @@ function AboutSkills() {
                   </>
                 ))}
             </div>
+            <span className="skill-heading">Learning Skills</span>
+            <div className="dragging-items">
+              {skills
+                .filter((item) => item.skillType === "learning skills")
+                .map((item) => (
+                  <>
+                    <Tilt
+                      tiltReverse={true} // Set this to true if you want the tilt effect to be reversed
+                      tiltMaxAngleX={30}
+                      tiltMaxAngleY={30}
+                      glareEnable={true}
+                    >
+                      <div
+                        key={item.id}
+                        draggable
+                        className="items-dragging"
+                        onDragStart={() => handleDragStart(item)}
+                      >
+                        <img src={item.skillPhoto} alt="" />
+                        <span>{item.skillName}</span>
+                      </div>
+                    </Tilt>
+                  </>
+                ))}
+            </div>
           </div>
           <div className="drag-img">
             <img src={`${ASSETS_URL}draganddropgif.gif`} alt="" />
@@ -202,7 +227,7 @@ function AboutSkills() {
             <div className="dropping-div">
               {droppedItem ? (
                 <div className="dropped-desc">
-                  <h3>Dropped Item:{droppedItem.skillName}</h3>
+                  <h3>Dropped Item: {droppedItem.skillName}</h3>
                   {/* <p>Name: {droppeditem.skillName}</p> */}
                   <div className="dropped-img-span">
                     <img

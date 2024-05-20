@@ -11,6 +11,10 @@
   overflow-y: scroll;
 
 }
+.portifolio-desc span{
+font-size: 25px;
+color: #f78de9;
+}
 
 .profile-details {
   display: flex;
@@ -86,7 +90,7 @@
 }
 
 .firstname {
-  color: #0011ff;
+  color: #f14adb;
   text-shadow: 3px 3px;
 }
 
