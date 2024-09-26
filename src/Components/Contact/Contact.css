@@ -28,6 +28,13 @@
 .nav-home-div {
   display: flex;
   cursor: pointer;
+  width: 50px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: pink;
 }
 .contact-me {
   font-size: Clamp(35px, 4.3vw, 70px);
@@ -156,7 +163,7 @@
   justify-content: center;
   /* align-items: center; */
   display: flex;
-  gap:10px;
+  gap: 10px;
   flex-direction: column;
   background: white;
 }
@@ -234,13 +241,13 @@
   text-align: center;
   font-weight: 800;
 }
-.individual-input-1{
+.individual-input-1 {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
-  color: #25D366;
+  color: #25d366;
   font-weight: 600;
 }
 

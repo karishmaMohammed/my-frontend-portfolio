@@ -5,12 +5,18 @@ import { ASSETS_URL } from "../../Constant";
 import ReactPlayer from "react-player";
 
 function ProjectPopUp({ projectName, onclose }) {
-  console.log(projectName);
-  const nav = useNavigate()
-  // s3://portfolio43/147142.png
+  const nav = useNavigate();
+
+  // Function to format the date to MM-DD-YYYY
+  const formatDate = (date) => {
+    const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+    return new Date(date).toLocaleDateString('en-US', options);
+  };
+
   const handleGithubLink = () => {
-    nav(projectName.repoLink)
-  }
+    nav(projectName.repoLink);
+  };
+
   return (
     <div className="proj-pop-up" onClick={onclose}>
       <div className="proj-pop-div" onClick={(e) => e.stopPropagation()}>
@@ -30,7 +36,6 @@ function ProjectPopUp({ projectName, onclose }) {
               height="100%"
             />
           </div>
-          {/* <img src={projectName.video} alt='' /> */}
         </div>
         <div className="project-name-span">
           <span className="heading-styles">{projectName.projectName}</span>
@@ -38,15 +43,16 @@ function ProjectPopUp({ projectName, onclose }) {
         <div className="proj-dates">
           <div className="proj-start">
             <span className="proj-start-text">Start :</span>
-            <span>{projectName.startDate}</span>
+            <span>{formatDate(projectName.startDate)}</span>
           </div>
           &nbsp; &nbsp; - &nbsp; &nbsp;
           <div className="proj-end">
             <span className="proj-start-text">End :</span>
-            {projectName.present === true
-              ? <span>Present</span>
-              : <span>{projectName.endDate}</span>
-            }
+            {projectName.present === true ? (
+              <span>Present</span>
+            ) : (
+              <span>{formatDate(projectName.endDate)}</span>
+            )}
           </div>
         </div>
 
@@ -61,19 +67,16 @@ function ProjectPopUp({ projectName, onclose }) {
               <li>{item}</li>
             </div>
           ))}
-          {/* <span>description</span> */}
         </div>
         <div className="project-links">
           <a href={projectName.repoLink} target="_blank" className="anchor">
             repo Link
             <img src={`${ASSETS_URL}github-link.png`} alt="" />
-
           </a>
           <a href={projectName.demoLink} target="_blank" className="anchor">
             live Link
             <img src={`${ASSETS_URL}live_link.png`} alt="" />
           </a>
-
         </div>
       </div>
     </div>

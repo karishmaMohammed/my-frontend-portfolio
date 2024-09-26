@@ -91,8 +91,8 @@ function Contact({ profileDetails }) {
     <div className="contact-page">
       <div className="nav-to-home">
         <div className="nav-home-div" onClick={handleNavigate}>
-          <img src={`${ASSETS_URL}leftArrow.png`} alt="" />
-          &nbsp;&nbsp;
+          {/* <img src={`${ASSETS_URL}leftArrow.png`} alt="" /> */}
+          {/* &nbsp;&nbsp; */}
           <img src={`${ASSETS_URL}homeLogo.png`} alt="" />
         </div>
       </div>

@@ -1,3 +1,22 @@
+.nav-to-home {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* padding-left: 50px; */
+    /* cursor: pointer; */
+    width: 100%;
+  }
+.nav-home-div {
+    display: flex;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: pink;
+  }
 .intro-page {
     display: flex;
     flex-direction: column;

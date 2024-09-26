@@ -15,7 +15,7 @@ function PortifolioSecond({profileDetails}) {
   const arrayOfList = [
     'Frontend Developer',
     'Backend Developer',
-    'FullStack Web Developer',
+    'Full Stack Web Developer',
     'Reactjs Developer',
     'MERN Stack Developer'
 
@@ -129,7 +129,7 @@ function PortifolioSecond({profileDetails}) {
 
           <div className='photo-details'>
             <div className='only-details'>
-              <span>Hi,  I'm</span>
+              <span>Hey, I'm</span>
               <span className='firstname'>{profileDetails.fullName} </span>
               <span className='typing-home'>
                  <Typed
@@ -143,7 +143,7 @@ function PortifolioSecond({profileDetails}) {
             <img src={profileDetails.photo} alt="logo" />
           </div>
           <div className='portifolio-desc'>
-            <span>Explore my professional highlights in this comprehensive portfolio.</span>
+            <span>Explore my professional highlights in portfolio.</span>
           </div>
 
         </motion.div>
