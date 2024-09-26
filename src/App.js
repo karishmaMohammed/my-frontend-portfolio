@@ -17,6 +17,7 @@ import axios from "axios";
 import { BASE_URL } from "./Constant";
 import { HelmetProvider } from 'react-helmet-async'; // Import HelmetProvider
 import { Helmet } from 'react-helmet-async';
+import Loading from "./Components/Loading/Loading";
 
 function App() {
   const [profileDetails, setProfileDetails] = useState({});
@@ -83,6 +84,7 @@ function App() {
         </Helmet>
       <Router>
         <Routes>
+        <Route path="/load" element={<Loading/>} />
           <Route path="/" element={<PortifolioSecond profileDetails={profileDetails}/>} />
           <Route path="/intro" element={<Intro profileDetails={profileDetails}/>} />
           <Route path="/skills" element={<AboutSkills />} />

@@ -95,6 +95,7 @@
 /* get in touch */
 .get-in-touch {
   display: flex;
+  border: 1px solid red;
   /* align-items: center; */
   width: 100%;
   box-sizing: border-box;

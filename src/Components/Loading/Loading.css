@@ -1,0 +1,191 @@
+:root{
+    --timing: 100ms;
+    --jump-height: 35px;
+    --loading-bg-color: #fff;
+    --dot-width: 35px;
+    --dot-height: 35px;
+    --dot-1-color: transparent;
+    --dot-2-color: transparent;
+    --dot-3-color: transparent;
+    --dot-4-color: transparent;
+    --dot-5-color: transparent;
+    --dot-6-color: transparent;
+    --dot-7-color: transparent;
+    --dot-8-color: transparent;
+    --font-color-loading: #f44ee3;
+    --font-size-loading: 35px;
+    --font-family-loading: "Inter", Shadows Into Light;
+  }
+  
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /*loading*/
+  
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--loading-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .loading-dots {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .dot-1,
+  .dot-2,
+  .dot-3,
+  .dot-4,
+  .dot-5,
+  .dot-6,
+  .dot-7,
+  .dot-8 {
+    position: relative;
+    height: var(--dot-height);
+    width: var(--dot-width);
+    border-radius: 50%;
+    filter: drop-shadow(0px 2px 2px rgba(109, 6, 6, 0.521)) 
+            drop-shadow(0px 3px 0.1px rgba(0, 0, 0, 0.3));
+    animation: jumping-dots 2s cubic-bezier(0.55, 1.55, 0.55, 1.55) infinite;
+    transition: var(--timing);
+  }
+  
+  .dot-1::before,
+  .dot-2::before,
+  .dot-3::before,
+  .dot-4::before,
+  .dot-5::before,
+  .dot-6::before,
+  .dot-7::before,
+  .dot-8::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: var(--font-size-loading);
+    font-family: var(--font-family-loading);
+    color: var(--font-color-loading);
+    animation: jumping-dots 2s cubic-bezier(0.55, 1.55, 0.55, 1.55) infinite;
+  }
+  
+  .dot-1::before {
+    content: 'K';
+  }
+  
+  .dot-2::before {
+    content: 'A';
+    animation-delay: 0.2s;
+  }
+  
+  .dot-3::before {
+    content: 'R';
+    animation-delay: 0.4s;
+  }
+  
+  .dot-4::before {
+    content: 'I';
+    animation-delay: 0.6s;
+  }
+  
+  .dot-5::before {
+    content: 'S';
+    animation-delay: 0.8s;
+  }
+  
+  .dot-6::before {
+    content: 'H';
+    animation-delay: 1s;
+  }
+  
+  .dot-7::before {
+    content: 'M';
+    animation-delay: 1.2s;
+  }
+  
+  .dot-8::before {
+    content: 'A';
+    animation-delay: 1.4s;
+  }
+  
+  .dot-1 {
+    background-color: var(--dot-1-color);
+  }
+  
+  .dot-2 {
+    background-color: var(--dot-2-color);
+    animation-delay: 0.2s;
+  }
+  
+  .dot-3 {
+    background-color: var(--dot-3-color);
+    animation-delay: 0.4s;
+  }
+  
+  .dot-4 {
+    background-color: var(--dot-4-color);
+    animation-delay: 0.6s;
+  }
+  
+  .dot-5 {
+    background-color: var(--dot-5-color);
+    animation-delay: 0.8s;
+  }
+  
+  .dot-6 {
+    background-color: var(--dot-6-color);
+    animation-delay: 1s;
+  }
+  
+  .dot-7 {
+    background-color: var(--dot-7-color);
+    animation-delay: 1.2s;
+  }
+  
+  .dot-8 {
+    background-color: var(--dot-8-color);
+    animation-delay: 1.4s;
+  }
+  
+  @keyframes jumping-dots {
+    0%, 25% {
+      transform: translateY(var(--jump-height));
+      color: transparent;
+    }
+    50%, 75% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
