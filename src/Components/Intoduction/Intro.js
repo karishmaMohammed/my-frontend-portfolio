@@ -79,7 +79,7 @@ function Intro({ profileDetails }) {
         <motion.div className='intro-hello' initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: "spring", duration: 5 }}>
-          <span>Hey! I'm {profileDetails.fullName}</span>
+          <span>I'm {profileDetails.fullName}</span>
         </motion.div>
         <motion.div className='intro-matter' initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}

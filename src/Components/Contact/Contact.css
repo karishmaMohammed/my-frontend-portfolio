@@ -3,6 +3,7 @@
   color: white; */
   padding: 20px;
   box-sizing: border-box;
+  overflow-y: hidden;
 }
 .flex-links {
   display: flex;
@@ -150,7 +151,12 @@
 }
 .form-page {
   width: 64%;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: center;
+  /* align-items: center; */
   display: flex;
+  gap:10px;
   flex-direction: column;
   background: white;
 }
@@ -162,7 +168,7 @@
   justify-content: center;
 }
 .form-box {
-  margin-top: 100px;
+  /* margin-top: 80px; */
   width: 75%;
   border: 1px solid black;
   padding: 10px;

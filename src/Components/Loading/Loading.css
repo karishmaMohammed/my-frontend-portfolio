@@ -16,26 +16,7 @@
     --font-size-loading: 35px;
     --font-family-loading: "Inter", Shadows Into Light;
   }
-  
-  * {
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  *:focus {
-    outline: none;
-  }
-  
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  /*loading*/
-  
+
   .loading-overlay {
     position: fixed;
     top: 0;
