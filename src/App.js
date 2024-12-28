@@ -60,7 +60,7 @@ function App() {
           } - My Portfolio`}</title>
           <meta
             name="keywords"
-            content="portfolio, react, web development,karishma mohammed,karishma mohammed portifolio"
+            content="portfolio, react, web development,karishma muhammed,karishma muhammed portifolio"
           />
           <meta name="author" content="Karishma" />
           <meta name="robots" content="index, follow" />
