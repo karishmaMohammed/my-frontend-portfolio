@@ -1,6 +1,6 @@
 .main-div {
-  /* background: rgb(0, 0, 0); */
-  background-image: url('https://portfolio-ks.s3.ap-south-1.amazonaws.com/background-image-galaxy.gif');
+  background: linear-gradient(45deg, #c9c7c9, #fdc7d4);
+  /* background-image: url('https://portfolio-ks.s3.ap-south-1.amazonaws.com/background-image-galaxy.gif'); */
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -13,7 +13,7 @@
 }
 .portifolio-desc span{
 font-size: 25px;
-color: #f78de9;
+color: #f527da;
 }
 
 .profile-details {
@@ -29,7 +29,7 @@ color: #f78de9;
   font-size: Clamp(20px, 2.7vw, 40px);
   font-weight: 600;
   width: 50%;
-  border: 2px solid rgb(0, 0, 0);
+  /* border: 2px solid rgb(0, 0, 0); */
 
   /* height: auto; */
 
@@ -83,7 +83,7 @@ color: #f78de9;
 
 .photo-details img {
   border-radius: 50%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 250px;
   height: 250px;
   /* filter: invert(1); */
