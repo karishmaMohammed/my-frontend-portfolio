@@ -1,23 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import PortifolioSecond from "./Components/Portifolio-second/PortifolioSecond";
-import Profile from "./Components/ProfileForms/Profile";
-import Projects from "./Components/Projects/Projects";
-import ProjectsForms from "./Components/ProfileForms/ProjectsForms";
-import Skills from "./Components/ProfileForms/Skills";
-import WorkStatus from "./Components/ProfileForms/WorkStatus";
-import Intro from "./Components/Intoduction/Intro";
-import Contact from "./Components/Contact/Contact";
-import GetInTouch from "./Components/Contact/GetInTouch";
-import Education from "./Components/Education/Education";
-import AboutSkills from "./Components/Skills/AboutSkills";
-import Experience from "./Components/Experience/Experience";
-import axios from "axios";
-import { BASE_URL } from "./Constant";
 import { HelmetProvider } from "react-helmet-async"; // Import HelmetProvider
 import { Helmet } from "react-helmet-async";
 import Loading from "./Components/Loading/Loading";
+import axios from "axios";
+import { BASE_URL } from "./Constant";
+
+// Lazy imports for code splitting
+const PortifolioSecond = React.lazy(() => import("./Components/Portifolio-second/PortifolioSecond"));
+const Profile = React.lazy(() => import("./Components/ProfileForms/Profile"));
+const Projects = React.lazy(() => import("./Components/Projects/Projects"));
+const ProjectsForms = React.lazy(() => import("./Components/ProfileForms/ProjectsForms"));
+const Skills = React.lazy(() => import("./Components/ProfileForms/Skills"));
+const WorkStatus = React.lazy(() => import("./Components/ProfileForms/WorkStatus"));
+const Intro = React.lazy(() => import("./Components/Intoduction/Intro"));
+const Contact = React.lazy(() => import("./Components/Contact/Contact"));
+const GetInTouch = React.lazy(() => import("./Components/Contact/GetInTouch"));
+const Education = React.lazy(() => import("./Components/Education/Education"));
+const AboutSkills = React.lazy(() => import("./Components/Skills/AboutSkills"));
+const Experience = React.lazy(() => import("./Components/Experience/Experience"));
 
 function App() {
   const [profileDetails, setProfileDetails] = useState({});
@@ -116,44 +118,46 @@ function App() {
             <Loading />
           ) : (
             <Router>
-              <Routes>
-                <Route
-                  path="/"
-                  element={<PortifolioSecond profileDetails={profileDetails} />}
-                />
-                <Route
-                  path="/intro"
-                  element={<Intro profileDetails={profileDetails} />}
-                />
-                <Route path="/skills" element={<AboutSkills />} />
-                <Route
-                  path="/education"
-                  element={<Education profileDetails={profileDetails} />}
-                />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/experience" element={<Experience />} />
-                <Route
-                  path="/contact"
-                  element={<Contact profileDetails={profileDetails} />}
-                />
-                <Route
-                  path="/get-in-touch"
-                  element={<GetInTouch profileDetails={profileDetails} />}
-                />
-                <Route
-                  path="/forms"
-                  element={
-                    <>
-                      <Profile />
-                      <Skills />
-                      <ProjectsForms />
-                      {/* <Projects />
-              <Education /> */}
-                      <WorkStatus />
-                    </>
-                  }
-                />
-              </Routes>
+              <Suspense fallback={<Loading />}>
+                <Routes>
+                  <Route
+                    path="/"
+                    element={<PortifolioSecond profileDetails={profileDetails} />}
+                  />
+                  <Route
+                    path="/intro"
+                    element={<Intro profileDetails={profileDetails} />}
+                  />
+                  <Route path="/skills" element={<AboutSkills />} />
+                  <Route
+                    path="/education"
+                    element={<Education profileDetails={profileDetails} />}
+                  />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/experience" element={<Experience />} />
+                  <Route
+                    path="/contact"
+                    element={<Contact profileDetails={profileDetails} />}
+                  />
+                  <Route
+                    path="/get-in-touch"
+                    element={<GetInTouch profileDetails={profileDetails} />}
+                  />
+                  <Route
+                    path="/forms"
+                    element={
+                      <>
+                        <Profile />
+                        <Skills />
+                        <ProjectsForms />
+                        {/* <Projects />
+                <Education /> */}
+                        <WorkStatus />
+                      </>
+                    }
+                  />
+                </Routes>
+              </Suspense>
             </Router>
           )}
         </>

@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
 
-function BottomRoute({ data }) {
+function CircleFlipNav({ data }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const navigate = useNavigate();
   const handleNavigate = (item) => {
     navigate(item);
   };
-
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
   };
@@ -17,7 +15,7 @@ function BottomRoute({ data }) {
     <motion.div
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ type: "spring", duration: 5 }}
+      transition={{ type: "spring", duration: 1.2 }}
     >
       <div className="intro-flipping-cards" style={{ background: "white" }}>
         {data.map((item, index) => (
@@ -34,6 +32,7 @@ function BottomRoute({ data }) {
                 <img
                   src={item.frontLogo}
                   style={{ width: "50px", height: "50px" }}
+                  alt={item.front}
                 />
                 <h2>{item.front}</h2>
               </div>
@@ -46,6 +45,7 @@ function BottomRoute({ data }) {
                 <img
                   src={item.backLogo}
                   style={{ width: "50px", height: "50px" }}
+                  alt="click to view"
                 />
                 <h2>click to view</h2>
               </div>
@@ -57,4 +57,4 @@ function BottomRoute({ data }) {
   );
 }
 
-export default BottomRoute;
+export default CircleFlipNav;
