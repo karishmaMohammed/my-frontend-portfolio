@@ -1,21 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap");
+
+:root {
+  --bg: #f7f1e8;
+  --bg-soft: #efe6d8;
+  --surface: #fffaf3;
+  --surface-2: #ffffff;
+  --ink: #2a211c;
+  --muted: #6d6258;
+  --faint: #94897e;
+  --line: rgba(42, 33, 28, 0.1);
+  --line-strong: rgba(42, 33, 28, 0.18);
+  --copper: #c46a3a;
+  --copper-deep: #a3542b;
+  --champagne: #9a6238;
+  --ember: #c45c3e;
+  --success: #3d8f68;
+  --danger: #c45c4a;
+  --shadow: 0 24px 60px rgba(80, 52, 28, 0.12);
+  --radius: 18px;
+  --nav-h: 76px;
+  --max: 1180px;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Outfit", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: 'Playpen Sans', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-a{
-  text-decoration: none;
-  color: inherit;
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+::-webkit-scrollbar-track {
+  background: #efe6d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4c4b0;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--copper);
+}
+
+::selection {
+  background: var(--copper);
+  color: #fffaf3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
 img {
-  user-drag: none;
+  max-width: 100%;
+  display: block;
   user-select: none;
-  -moz-user-select: none;
   -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+}
+
+#root {
+  position: relative;
+  isolation: isolate;
+}
+
+.Toastify__toast {
+  font-family: var(--sans) !important;
+  background: var(--surface-2) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 12px !important;
+}
+
+.Toastify__progress-bar--success {
+  background: var(--copper) !important;
 }
