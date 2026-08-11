@@ -36,25 +36,6 @@ function ProjectsForm() {
     setProjectDescription(newDesignations);
   };
 
-  // Event handler to log the form data when the button is clicked
-  const handleSubmit = () => {
-    const formData = {
-      projectName,
-      projectPhoto,
-      projectVideo,
-      projectShortDescription,
-      projectDescription,
-      projectStartDate,
-      projectEndDate,
-      projectTechStack,
-      projectDemoLink,
-      projectRepoLink,
-    };
-    console.log("Form Data:", formData);
-    console.log(present.value);
-    // You can perform additional actions with the form data here
-  };
-
   const handleProjectDetails = async () => {
     try {
       const createProjects = await axios.post(

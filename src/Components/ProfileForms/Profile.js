@@ -14,22 +14,6 @@ function Profile() {
   const [github, setGithub] = useState("");
   const [designations, setDesignations] = useState([]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = {
-      photo,
-      fullName,
-      phoneNumber,
-      email,
-      aboutMe,
-      linkedIn,
-      github,
-      designations,
-    };
-    console.log("Form Data:", formData);
-    // You can send the data to the server or perform other actions here
-  };
-
   const handleProfileDetails = async () => {
     try {
       const createProfileDetails = await axios.post(

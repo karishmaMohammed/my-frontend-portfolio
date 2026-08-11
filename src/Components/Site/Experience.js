@@ -4,6 +4,7 @@ import { EXPERIENCE, YEARS_EXPERIENCE } from "../../content";
 import { Reveal } from "./Motion";
 
 function Experience() {
+  const yearsExperience = YEARS_EXPERIENCE;
   return (
     <section className="section" id="experience">
       <div className="wrap">
@@ -14,7 +15,7 @@ function Experience() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="section-aside">
-              Promoted from intern to senior at Marathon-OS. {YEARS_EXPERIENCE}+ years owning enterprise SaaS used by hardware teams.
+              Promoted from intern to senior at Marathon-OS. {yearsExperience}+ years owning enterprise SaaS used by hardware teams.
             </p>
           </Reveal>
         </div>
