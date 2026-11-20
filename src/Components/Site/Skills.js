@@ -15,7 +15,7 @@ function Skills() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="section-aside">
-                Frontend craft, backend scale, cloud pipelines, and applied AI — used together, not collected as logos.
+                Frontend, backend, CAD geometry, and applied AI. Every item here is in production work.
               </p>
             </Reveal>
           </div>

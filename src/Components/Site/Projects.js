@@ -14,7 +14,7 @@ function Projects() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="section-aside">
-              Enterprise PLM, CAD conversion at scale, and a production WhatsApp AI system — not toy clones.
+              A live CAD platform, an enterprise PLM, and a production WhatsApp AI system, all in real use.
             </p>
           </Reveal>
         </div>

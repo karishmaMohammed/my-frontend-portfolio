@@ -50,11 +50,11 @@ function App() {
         <title>{`${name} — Senior Full-Stack Developer`}</title>
         <meta
           name="description"
-          content={`Senior Full-Stack Engineer building MERN SaaS, CAD infrastructure, and AI automation. ${YEARS_EXPERIENCE}+ years shipping production systems.`}
+          content={`Senior Full-Stack Engineer building revenue-generating SaaS, CAD processing pipelines, and production AI. ${YEARS_EXPERIENCE}+ years shipping with React, Next.js, Node.js, MongoDB, Kafka, and Docker.`}
         />
         <meta
           name="keywords"
-          content="Karishma Mohammed, senior full stack developer, MERN, Next.js, AI automation, portfolio"
+          content="Karishma M, Karishma Mohammed, senior full stack developer, MERN, Next.js, Node.js, AI automation, CAD, FreeCAD, Kafka, portfolio"
         />
         <meta name="author" content={name} />
         <meta name="theme-color" content="#f7f1e8" />

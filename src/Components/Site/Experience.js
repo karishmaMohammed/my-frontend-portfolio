@@ -15,7 +15,7 @@ function Experience() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="section-aside">
-              Promoted from intern to senior at Marathon-OS. {yearsExperience}+ years owning enterprise SaaS used by hardware teams.
+              Intern to senior at Marathon-OS in under two years. {yearsExperience}+ years shipping SaaS used by enterprise hardware teams.
             </p>
           </Reveal>
         </div>
